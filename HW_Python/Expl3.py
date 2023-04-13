@@ -4,3 +4,26 @@
 
 # 385916 -> yes
 # 123456 -> no
+
+n = int(input("Введите номер вашего билета: "))
+c = 0
+sum = 0
+sum2 = 0
+if 99999 < n < 1000000:
+    if n > 0:
+        while n > 0 and c < 3:
+            x = n % 10
+            sum2 = sum2 + x
+            n = n // 10
+            c = c + 1
+        while n > 0 and c < 6:
+            y = n % 10
+            sum = sum + y
+            n = n // 10
+            c = c + 1
+    if sum == sum2:
+        print("У вас счастливый билетик!")
+    else:
+        print("В этот раз не повезло.")
+else:
+    print("В этот раз не повезло.")   
