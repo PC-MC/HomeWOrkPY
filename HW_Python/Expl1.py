@@ -10,7 +10,7 @@ sum = 0
 if 99 < n < 1000:
     while n > 0:
         sum += n % 10
-        n = n // 10
+        n //= 10
     print (sum)
 else:
     print("Не верно введено число")

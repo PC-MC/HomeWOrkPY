@@ -15,15 +15,13 @@ sum2 = 0
 if 99999 < n < 1000000:
     if n > 0:
         while n > 0 and c < 3:
-            x = n % 10
-            sum2 = sum2 + x
+            sum2 += n % 10
             n //= 10
-            c = c + 1
+            c += 1
         while n > 0 and c < 6:
-            y = n % 10
-            sum = sum + y
+            sum += n % 10
             n //= 10
-            c = c + 1
+            c += 1
     if sum == sum2:
         print("У вас счастливый билетик!")
     else:
