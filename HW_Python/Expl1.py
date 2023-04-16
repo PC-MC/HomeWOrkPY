@@ -9,8 +9,7 @@ n = int(input("введите трехзначное число: "))
 sum = 0
 if 99 < n < 1000:
     while n > 0:
-        x = n % 10
-        sum = sum + x
+        sum += n % 10
         n = n // 10
     print (sum)
 else:
