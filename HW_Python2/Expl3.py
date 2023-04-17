@@ -5,3 +5,9 @@ i = 1
 while 2 ** i <= n:
     print(2 ** i)
     i += 1
+
+# n = int(input("Введите число: "))
+# m = 2
+# while m < n:
+#     print(m, end=' ')
+#     m = m * 2
