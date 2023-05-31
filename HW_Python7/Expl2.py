@@ -34,3 +34,24 @@ def print_operation_table(operation, num_rows, num_columns):
 r = int(input("Введите количество строк: "))
 c = int(input("Введите количество столбцов: "))
 print_operation_table(lambda x, y: x*y, r, c)
+
+
+# 1.
+# def print_operation_table(operation, num_rows=6, num_columns=6):
+#     for i in range(1, num_rows + 1):
+#         print()
+#         for j in range(1, num_columns + 1):
+#             print('''{:<3}'''.format(operation(i,j)), end=" ")
+# print_operation_table(lambda x, y: x * y)
+
+
+# 2.
+# def print_operation_table(operation, num_rows=6, num_columns=6):
+#     for x in range(1, num_rows + 1):
+#         lists = []
+#         for y in range(1, num_columns + 1):
+#             num = operation(x, y)
+#             lists.append(num)
+#         print(*[str(x) for x in lists])
+
+# print_operation_table(lambda x, y: x * y)
